@@ -11,7 +11,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'docker build -t akshu20791/staragileprojectfinance:v1 .'
+                    sh 'docker build -t shekhawat02/staragileprojectfinance:v1 .'
                     sh 'docker images'
                 }
             }
@@ -20,7 +20,7 @@ pipeline {
         
      stage('Deploy') {
             steps {
-                sh 'sudo docker run -itd --name My-first-containe21211 -p 8083:8081 akshu20791/staragileprojectfinance:v1'
+                sh 'sudo docker run -d -itd --name My-first-containe2510 -p 8083:8081 shekhawat02/staragileprojectfinance:v1'
                   
                 }
             }
