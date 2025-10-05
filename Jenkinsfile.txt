@@ -39,7 +39,7 @@
                     // MISTAKE FIX: 'itd' is changed to '-d' (detached mode)
                     // NOTE: Running docker without 'sudo' is preferred; ensure Jenkins user is in the 'docker' group.
                     echo "Starting new container: ${containerName}"
-                    sh "docker run -d --name ${containerName} -p 8084:8081 ${imageTag}"
+                    sh "docker run -d --name ${containerName} -p 8083:8081 ${imageTag}"
                 }
             }
         }
